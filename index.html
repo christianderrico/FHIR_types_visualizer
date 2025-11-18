@@ -58,7 +58,7 @@
     /* GRAPH AREA */
     #treeContainer {
         position: absolute;
-        top: 90px;
+        top: 50px;
         left: 0;
         width: calc(100% - 300px);
         bottom: 0;
@@ -73,7 +73,7 @@
     /* FHIR DETAIL PANEL */
     #detailsPanel {
         position: absolute;
-        top: 90px;
+        top: 50px;
         right: 0;
         width: 300px;
         bottom: 0;
@@ -428,14 +428,11 @@ document.querySelectorAll(".tab").forEach(tab => {
         const file = tab.getAttribute("data-tree") === "elements"
             ? "elements_tree.json"
             : "resources_tree.json";
-
+        
         loadTree(file);
     });
 });
 
-/* ============================================================
-   LOAD DEFAULT
-============================================================ */
 loadTree("elements_tree.json");
 
 </script>
